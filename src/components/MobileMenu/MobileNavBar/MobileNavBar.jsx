@@ -5,29 +5,29 @@ import NavBar from 'components/NavBar/NavBar';
 import { MobileContainer } from './MobileNavBar.styled';
 import { Backdrop } from '../../Modal/Modal.styled';
 
-const MobileNavBar = ({ buttonClick }) => {
+const MobileNavBar = ({ showNav }) => {
   useEffect(() => {
     const onEscClick = event => {
       if (event.code === 'Escape') {
-        buttonClick();
+        showNav();
       }
     };
     window.addEventListener('keydown', onEscClick);
     return () => {
       window.removeEventListener('keydown', onEscClick);
     };
-  }, [buttonClick]);
+  }, [showNav]);
 
   const onOverlayClick = event => {
     if (event.target === event.currentTarget) {
-      buttonClick();
+      showNav();
     }
   };
   return createPortal(
     <Backdrop onClick={onOverlayClick}>
       <MobileContainer>
-        <CloseButton click={buttonClick} />
-        <NavBar />
+        <CloseButton click={showNav} />
+        <NavBar showNav={showNav}/>
       </MobileContainer>
     </Backdrop>,
     document.getElementById('modal-root')

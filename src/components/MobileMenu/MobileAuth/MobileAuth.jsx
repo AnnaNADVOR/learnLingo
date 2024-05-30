@@ -1,6 +1,9 @@
+import { useState } from 'react';
+
 import AuthForm from 'components/AuthForm/AuthForm';
 import { AuthContainer, RegisterLink } from './MobileAuth.styled';
-import { useState } from 'react';
+
+
 const MobileAuth = () => {
   const [showRegisterForm, setShowRegisterForm] = useState(false);
   const toggleRegisterForm = () => setShowRegisterForm(!showRegisterForm);
