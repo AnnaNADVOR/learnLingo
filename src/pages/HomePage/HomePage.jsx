@@ -1,23 +1,13 @@
-import { Route, Routes } from 'react-router-dom';
+import GirlLogo from '../../assets/icons/girl-logo.png';
+import MacLogo from '../../assets/icons/iMac-logo-yellow.png';
 
-import Layout from './Layout/Layout';
-import HomePage from 'pages/HomePage/HomePage';
-
-export const App = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage/>} />
-        <Route path="/teachers" element={<div>Teachers page</div>} />
-        {/* <Route
-          index
-          element={
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+const HomePage = () => {
+return (<div>
+              {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur nemo neque ex dolore, nostrum quia est porro delectus
               dolorem laborum, molestias accusamus! Dignissimos nemo hic
-              accusantium, perferendis itaque quas eaque.
-              <div
+              accusantium, perferendis itaque quas eaque. */}
+              {/* <div
                 style={{
                   backgroundColor: '#fbe9ba',
                   width: '568px',
@@ -36,11 +26,8 @@ export const App = () => {
                   alt=""
                   style={{ position: 'absolute', top: '354px', left: '104px' }}
                 />
-              </div>
-            </div>
-          }
-        /> */}
-      </Route>
-    </Routes>
-  );
-};
+              </div> */}
+            </div>)
+}
+
+export default HomePage; 
