@@ -8,6 +8,11 @@ export const HeroContainer = styled.div`
   border-radius: var(--border-radius);
 
   @media screen and (min-width: 768px) {
+    width: 50%;
+    height: 500px;
+  }
+
+  @media screen and (min-width: 1440px) {
     width: 568px;
     height: 530px;
   }
@@ -15,13 +20,21 @@ export const HeroContainer = styled.div`
 
 export const GirlIcon = styled.img`
   position: absolute;
-  top: 50%;
+  top: 25px;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translateX(-50%);
   width: 250px;
   height: 250px;
 
   @media screen and (min-width: 768px) {
+    /* transform: translate(0); */
+    top: 108px;
+    /* left: 90px; */
+    width: 300px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: 1440px) {
     transform: translate(0);
     top: 80px;
     left: 114px;
@@ -32,13 +45,21 @@ export const GirlIcon = styled.img`
 
 export const MacIcon = styled.img`
   position: absolute;
-  top: 70%;
+  top: 230px;
   left: 50%;
-  transform: translate(-50%, -13%);
+  transform: translateX(-50%);
   width: 250px;
   height: 120px;
 
   @media screen and (min-width: 768px) {
+    /* transform: translate(0);  */
+    top: 349px;
+    /* left: 104px; */
+    width: 330px;
+    height: 150px;
+  }
+
+  @media screen and (min-width: 1440px) {
     transform: translate(0);
     top: 354px;
     left: 104px;

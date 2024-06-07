@@ -1,6 +1,7 @@
 const commonTheme = {
   primaryBlack: '#121417',
   secondaryBlack: '#8a8a89',
+  secondaryBackground: '#f8f8f8',
   mainTransparentBlack: 'rgba(18, 20, 23, 0.7)',
   secondaryTransparentBlack: 'rgba(18, 20, 23, 0.8)',
   primaryWhite: '#fff',

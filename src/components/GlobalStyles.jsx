@@ -19,15 +19,17 @@ const GlobalStyles = () => {
           --hover-transition: ${theme.hoverTransition};
           --button-shadow: ${theme.buttonShadow};
           --border-radius: ${theme.borderRadius};
+          --secondary-background: ${theme.secondaryBackground};
         }
 
         body {
           background-color: var(--primary-white);
-          color: var(--primary-text);
+          color: var(--primary-black);
           font-family: 'Roboto', sans-serif;
           font-weight: 400;
           font-size: 16px;
           line-height: 1.5;
+          letter-spacing: -0.02em;
         }
 
         a {

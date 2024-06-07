@@ -1,4 +1,4 @@
-// import { createPortal } from 'react-dom';
+import { createPortal } from 'react-dom';
 import { useEffect } from 'react';
 import CloseButton from '../../Buttons/CloseButton/CloseButton';
 import NavBar from 'components/NavBar/NavBar';
@@ -23,7 +23,7 @@ const MobileNavBar = ({ closeNav, showNav }) => {
     }
   };
 
-  return (
+  return createPortal(
     <Backdrop onClick={onOverlayClick} active={showNav}>
       <Menu>
         <MenuContainer>
@@ -31,7 +31,8 @@ const MobileNavBar = ({ closeNav, showNav }) => {
           <NavBar closeNav={closeNav} />
         </MenuContainer>
       </Menu>
-    </Backdrop>
+    </Backdrop>,
+    document.getElementById('modal-root')
   );
 };
 

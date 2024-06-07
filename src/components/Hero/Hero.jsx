@@ -3,9 +3,10 @@ import WelcomeInfo from './WelcomeInfo/WelcomeInfo';
 
 const Hero = ({ selectedTheme }) => {
   return (
-    <div>
+      <div>
+          <HeroIcon selectedTheme={selectedTheme} />
       <WelcomeInfo />
-      <HeroIcon selectedTheme={selectedTheme} />
+      
     </div>
   );
 };

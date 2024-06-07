@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Button = styled.button`
   display: block;
-  width: 100%;
+  width: ${(({width})=> width ??'100%')};
   margin-left: auto;
   margin-right: auto;
   padding: 16px;
@@ -15,7 +15,7 @@ export const Button = styled.button`
   transition: background-color var(--hover-transition);
 
   &:hover,
-  :focus {
+  &:focus {
     background-color: var(--accent-background);
   }
 `;

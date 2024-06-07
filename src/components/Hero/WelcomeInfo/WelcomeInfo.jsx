@@ -1,18 +1,19 @@
 import MainButton from 'components/Buttons/MainButton/MainButton';
+import { InfoContainer, WelcomeMessage, Title } from './WelcomeInfo.styled';
 
 const WelcomeInfo = () => {
   return (
-    <div>
-      <h1>
+    <InfoContainer>
+      <Title>
         Unlock your potential with the best <span>language</span> tutors
-      </h1>
-      <p>
+      </Title>
+      <WelcomeMessage>
         Embark on an Exciting Language Journey with Expert Language Tutors:
         Elevate your language proficiency to new heights by connecting with
         highly qualified and experienced tutors.
-      </p>
-      <MainButton text="Get started" type="button" />
-    </div>
+      </WelcomeMessage>
+      <MainButton text="Get started" type="button" width="267px" />
+    </InfoContainer>
   );
 };
 
