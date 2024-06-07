@@ -1,5 +1,5 @@
-import GirlLogo from '../../assets/icons/girl-logo.png';
-import MacLogo from '../../assets/icons/iMac-logo-yellow.png';
+// import GirlLogo from '../../assets/icons/girl-logo.png';
+// import MacLogo from '../../assets/icons/iMac-logo-yellow.png';
 
 const HomePage = () => {
   return (<div>

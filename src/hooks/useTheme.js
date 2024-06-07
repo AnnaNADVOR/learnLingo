@@ -1,11 +1,11 @@
 
 import { useContext } from "react"
 import { ThemeContext } from "../context/ThemeContext"
-import { greenTheme, blueTheme } from "../assets/themes";
+import { yellowTheme, blueTheme } from "../assets/themes";
 
 const useTheme = () => {
     const { theme, toggleTheme } = useContext(ThemeContext);
-    const currentTheme = theme === 'blue' ? blueTheme  : greenTheme ;
+    const currentTheme = theme === 'yellow' ? yellowTheme  : blueTheme ;
 
     return { theme, toggleTheme, currentTheme };
 }

@@ -3,7 +3,7 @@ const { createContext, useState, useEffect } = require('react');
 const ThemeContext = createContext();
 const CustomThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(
-    () => JSON.parse(localStorage.getItem('theme')) ?? 'blue'
+    () => JSON.parse(localStorage.getItem('theme')) ?? 'yellow'
     );
     
     useEffect(() => {
