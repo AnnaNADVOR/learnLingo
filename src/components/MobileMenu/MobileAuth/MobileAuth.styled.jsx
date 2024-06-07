@@ -13,9 +13,4 @@ export const RegisterLink = styled(Link)`
   color: var(--accent);
   text-decoration: underline;
   margin-left: 10px;
-  transition: color var(----hover-transition);
-
-  &:hover {
-    color: var(--accent-background);
-  }
 `;

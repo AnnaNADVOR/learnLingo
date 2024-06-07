@@ -1,7 +1,7 @@
 import { Button } from './MainButton.styled';
 
-const MainButton = ({ text }) => {
-  return <Button>{text}</Button>
+const MainButton = ({ text, type }) => {
+  return <Button type={type}>{text}</Button>
 };
 
 export default MainButton;

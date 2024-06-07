@@ -68,7 +68,7 @@ const AuthForm = ({ title, message }) => {
           </PasswordField>
         </label>
       </InputField>
-      <MainButton text={title === 'Registration' ? 'Sign Up' : 'Log In'} />
+      <MainButton text={title === 'Registration' ? 'Sign Up' : 'Log In'} type="submit" />
     </form>
   );
 };

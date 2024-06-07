@@ -18,6 +18,7 @@ const GlobalStyles = () => {
           --input-form-border: ${theme.inputFormBorder};
           --hover-transition: ${theme.hoverTransition};
           --button-shadow: ${theme.buttonShadow};
+          --border-radius: ${theme.borderRadius};
         }
 
         body {
