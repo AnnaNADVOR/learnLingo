@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/learnLingo/static/css/main.70b01caa.css",
+    "main.js": "/learnLingo/static/js/main.9656df33.js",
+    "static/media/sprite.svg": "/learnLingo/static/media/sprite.a04cad3e13476727e7a3780506f2f5ac.svg",
+    "index.html": "/learnLingo/index.html",
+    "main.70b01caa.css.map": "/learnLingo/static/css/main.70b01caa.css.map",
+    "main.9656df33.js.map": "/learnLingo/static/js/main.9656df33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70b01caa.css",
+    "static/js/main.9656df33.js"
+  ]
+}
