@@ -1,15 +1,22 @@
 import { Route, Routes } from 'react-router-dom';
-
 import Layout from './Layout/Layout';
 import HomePage from 'pages/HomePage/HomePage';
+import { ThemeProvider } from '@emotion/react';
+import useTheme from '../hooks/useTheme';
+import GlobalStyles from './GlobalStyles';
 
 export const App = () => {
+  const { currentTheme } = useTheme();
+
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage/>} />
-        <Route path="/teachers" element={<div>Teachers page</div>} />
-        {/* <Route
+    <ThemeProvider theme={currentTheme}>
+      <GlobalStyles />
+
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/teachers" element={<div>Teachers page</div>} />
+          {/* <Route
           index
           element={
             <div>
@@ -40,7 +47,8 @@ export const App = () => {
             </div>
           }
         /> */}
-      </Route>
-    </Routes>
+        </Route>
+      </Routes>
+    </ThemeProvider>
   );
 };

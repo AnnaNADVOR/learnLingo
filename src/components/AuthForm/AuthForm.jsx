@@ -15,7 +15,8 @@ import {
 const AuthForm = ({ title, message }) => {
   const [showPassword, setShowPassword] = useState(false);
   const switchPassword = () => setShowPassword(!showPassword);
-
+ 
+  
   return (
     <form>
       <FormTitle>{title}</FormTitle>

@@ -2,7 +2,8 @@ import GirlLogo from '../../assets/icons/girl-logo.png';
 import MacLogo from '../../assets/icons/iMac-logo-yellow.png';
 
 const HomePage = () => {
-return (<div>
+  return (<div>
+  Home page
               {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur nemo neque ex dolore, nostrum quia est porro delectus
               dolorem laborum, molestias accusamus! Dignissimos nemo hic
@@ -10,9 +11,9 @@ return (<div>
               {/* <div
                 style={{
                   backgroundColor: '#fbe9ba',
-                  width: '568px',
+                  width: '200px',
                   borderRadius: '30px',
-                  height: '530px',
+                  height: '200px',
                   position: 'relative',
                 }}
               >

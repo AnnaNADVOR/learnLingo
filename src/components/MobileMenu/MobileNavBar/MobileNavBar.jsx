@@ -1,38 +1,38 @@
-import { createPortal } from 'react-dom';
+// import { createPortal } from 'react-dom';
 import { useEffect } from 'react';
 import CloseButton from '../../Buttons/CloseButton/CloseButton';
 import NavBar from 'components/NavBar/NavBar';
-import { MobileContainer } from './MobileNavBar.styled';
-import { Backdrop } from '../../Modal/Modal.styled';
+import { MenuContainer, Backdrop, Menu } from './MobileNavBar.styled';
 
-const MobileNavBar = ({ showNav }) => {
+const MobileNavBar = ({ closeNav, showNav }) => {
   useEffect(() => {
     const onEscClick = event => {
-      if (event.code === 'Escape') {
-        showNav();
+      if (event.code === 'Escape' && showNav) {
+        closeNav();
       }
     };
     window.addEventListener('keydown', onEscClick);
     return () => {
       window.removeEventListener('keydown', onEscClick);
     };
-  }, [showNav]);
+  }, [closeNav, showNav]);
 
   const onOverlayClick = event => {
     if (event.target === event.currentTarget) {
-      showNav();
+      closeNav();
     }
   };
-  return createPortal(
-    <Backdrop onClick={onOverlayClick}>
-      <MobileContainer>
-        <CloseButton click={showNav} />
-        <NavBar showNav={showNav}/>
-      </MobileContainer>
-    </Backdrop>,
-    document.getElementById('modal-root')
-      );
- 
+
+  return (
+    <Backdrop onClick={onOverlayClick} active={showNav}>
+      <Menu>
+        <MenuContainer>
+          <CloseButton click={closeNav} />
+          <NavBar closeNav={closeNav} />
+        </MenuContainer>
+      </Menu>
+    </Backdrop>
+  );
 };
 
 export default MobileNavBar;

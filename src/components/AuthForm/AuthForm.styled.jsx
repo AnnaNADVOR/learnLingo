@@ -9,16 +9,16 @@ export const FormTitle = styled.h3`
 
 export const InfoMessage = styled.p`
   line-height: 1.375;
-  color: ${({ theme }) => theme.colors.formTextColor};
+  color: var(--secondary-transparent-black);
   margin-bottom: 40px;
 `;
 
 export const FormInput = styled.input`
   width: 100%;
-  border: ${({ theme }) => theme.borders.inputFormBorder};
-  border-radius: 12px;
   padding: 16px 18px;
   outline: transparent;
+  border: var(--input-form-border);
+  border-radius: 12px;
   background-color: transparent;
 `;
 
@@ -49,14 +49,14 @@ export const PasswordButton = styled.button`
 `;
 
 const PasswordIcon = styled.svg`
-  fill: ${({ theme }) => theme.colors.primaryTextColor};
+  fill: var(--primary-black);
 `;
 
 export const HidePasswordIcon = styled.svg`
   width: 20px;
   height: 20px;
   fill: none;
-  stroke: ${({ theme }) => theme.colors.primaryTextColor};
+  stroke: var(--primary-black);
 `;
 
 export const ShowPasswordIcon = PasswordIcon.withComponent(HidePasswordIcon);

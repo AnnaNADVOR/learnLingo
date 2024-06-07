@@ -9,8 +9,7 @@ export const Backdrop = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.overlayBack};
-
+  background-color: var(--modal-overlay);
  `;
 
 export const ModalContainer = styled.div`
@@ -19,11 +18,10 @@ export const ModalContainer = styled.div`
   padding: 40px;
   left: 50%;
   top: 50%;
+  border-radius: 30px; 
+  background-color: var(--primary-white);
   transform: translate(-50%, -50%) scale(1);
-  background-color: ${({ theme }) => theme.colors.primaryWhite};
-  border-radius: 30px;
-  transition: transform ${({ theme }) => theme.transition},
-    -webkit-transform ${({ theme }) => theme.transition};
+  transition: transform var(--hover-transition); 
 
   @media screen and (min-width: 300px) and (max-width: 460px) {
     min-width: 90%;

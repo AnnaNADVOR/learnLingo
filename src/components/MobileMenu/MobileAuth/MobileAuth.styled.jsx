@@ -10,6 +10,12 @@ export const AuthContainer = styled.div`
 `;
 
 export const RegisterLink = styled(Link)`
-  color: ${({ theme }) => theme.colors.accentYellow};
+  color: var(--accent);
   text-decoration: underline;
+  margin-left: 10px;
+  transition: color var(----hover-transition);
+
+  &:hover {
+    color: var(--accent-background);
+  }
 `;

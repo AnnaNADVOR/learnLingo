@@ -1,13 +1,9 @@
 import { Suspense, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import sprite from '../../assets/icons/sprite.svg';
-import NavBar from '../NavBar/NavBar';
-import { HeaderContainer, FlagIcon, LogoLink } from './Layout.styled';
 import Modal from 'components/Modal/Modal';
-import AuthMenu from '../AuthMenu/AuthMenu';
-import MobileMenu from '../MobileMenu/MobileMenu';
 import MobileNavBar from 'components/MobileMenu/MobileNavBar/MobileNavBar';
 import MobileAuth from 'components/MobileMenu/MobileAuth/MobileAuth';
+import Header from '../Header/Header';
 
 const Layout = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -20,6 +16,8 @@ const Layout = () => {
     const handleResize = () => {
       setShowMobileMenu(window.innerWidth <= 768);
     };
+
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -30,40 +28,23 @@ const Layout = () => {
   return (
     <>
       <header>
-        <HeaderContainer>
-          <LogoLink to="/">
-            <FlagIcon>
-              <use href={`${sprite}#ukraine`}></use>
-            </FlagIcon>
-            LearnLingo
-          </LogoLink>
-
-          {showMobileMenu ? (
-            <>
-              <MobileMenu
-                showMobileNav={toggleMobileNav}
-                showMobileAuth={toggleMobileAuth}
-              />
-              {showMobileNav && <MobileNavBar showNav={toggleMobileNav} />}
-              {showMobileAuth && (
-                <Modal closeModal={toggleMobileAuth}>
-                  <MobileAuth />
-                </Modal>
-              )}
-            </>
-          ) : (
-            <>
-              <NavBar />
-              <AuthMenu />
-            </>
-          )}
-        </HeaderContainer>
+        <Header
+          showMenu={showMobileMenu}
+          toggleAuth={toggleMobileAuth}
+          toggleNav={toggleMobileNav}
+        />
       </header>
       <main>
         <Suspense>
           <Outlet />
         </Suspense>
       </main>
+      <MobileNavBar closeNav={toggleMobileNav} showNav={showMobileNav} />
+      {showMobileAuth && (
+        <Modal closeModal={toggleMobileAuth}>
+          <MobileAuth />
+        </Modal>
+      )}
     </>
   );
 };

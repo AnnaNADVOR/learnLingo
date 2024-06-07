@@ -11,17 +11,17 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: stroke ${({ theme }) => theme.transition};
+  transition: stroke var(--hover-transition);
 
   & > svg:hover,
   & > svg:focus {
-    stroke: ${({ theme }) => theme.colors.accentYellow};
+   stroke: var(--accent);
   }
 `;
 
 export const CloseIcon = styled.svg`
   fill: currentColor;
-  stroke: ${({ theme }) => theme.colors.primaryTextColor};
+  stroke: var(--primary-black);
   width: 32px;
   height: 32px;
 `;

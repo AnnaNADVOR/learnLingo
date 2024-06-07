@@ -1,16 +1,16 @@
 // import AuthNav from 'components/AuthMenu/AuthMenu';
 import { Nav, NavigationLink, NavList, NavListItem } from './NavBar.styled';
 
-const NavBar = ({showNav}) => {
+const NavBar = ({closeNav}) => {
    return (
       <>
          <Nav>
             <NavList>
                <NavListItem>
-                  <NavigationLink to="/" onClick={showNav}>Home</NavigationLink>
+                  <NavigationLink to="/" onClick={closeNav}>Home</NavigationLink>
                </NavListItem>
                <NavListItem>
-                  <NavigationLink to="/teachers" onClick={showNav}>Teachers</NavigationLink>
+                  <NavigationLink to="/teachers" onClick={closeNav}>Teachers</NavigationLink>
                </NavListItem>
             </NavList>
          </Nav>

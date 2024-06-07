@@ -1,11 +1,14 @@
 @import-normalize; /* bring in normalize.css styles */
 
+
 body {
+
+/* 
   color: #121417;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   letter-spacing: -0.02em;
-  margin: 0;
+  margin: 0; */
   /* font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
@@ -18,7 +21,7 @@ code {
     monospace;
 }
 
-a {
+/* a {
   text-decoration: none;
   color: currentColor;
 }
@@ -55,4 +58,4 @@ select,
 textarea {
   font-family: inherit;
   
-margin:0;}
+margin:0;} */
