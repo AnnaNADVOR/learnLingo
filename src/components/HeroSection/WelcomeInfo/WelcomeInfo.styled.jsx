@@ -4,16 +4,28 @@ export const InfoContainer = styled.div`
   background-color: var(--secondary-background);
   padding: 38px 28px;
   border-radius: var(--border-radius);
-  text-align:center;
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+
+     button {
+      width: 100%;
+    }
 
   @media screen and (min-width: 768px) {
-    padding: 98px 108px 98px 64px;
+    padding: 48px;
   }
 
   @media screen and (min-width: 1440px) {
     padding: 98px 108px 98px 64px;
-  }
+    width: 720px;
+    text-align: start;
 
+    button {
+      margin-left: 0;
+      width: 275px;
+    }
+  }
 `;
 
 export const Title = styled.h1`

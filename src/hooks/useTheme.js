@@ -1,13 +1,42 @@
-
-import { useContext } from "react"
-import { ThemeContext } from "../context/ThemeContext"
-import { yellowTheme, blueTheme } from "../assets/themes";
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
+import {
+  yellowTheme,
+  blueTheme,
+  redTheme,
+  orangeTheme,
+  greenTheme,
+} from '../assets/themes';
 
 const useTheme = () => {
-    const { theme, toggleTheme } = useContext(ThemeContext);
-    const currentTheme = theme === 'yellow' ? yellowTheme  : blueTheme ;
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  // const themes = [yellowTheme, blueTheme, redTheme, orangeTheme, greenTheme];
+  // setInterval(toggleTheme, 8000)
+  // const currentTheme = theme === 'yellowTheme' ? yellowTheme  : blueTheme ;
+  
+    let currentTheme;
+  switch (theme) {
+    case 'blue':
+      currentTheme = blueTheme;
+      break;
+    case 'yellow':
+      currentTheme = yellowTheme;
+      break;
+    case 'green':
+      currentTheme = greenTheme;
+      break;
+    case 'orange':
+      currentTheme = orangeTheme;
+      break;
+    case 'red':
+      currentTheme = redTheme;
+      break;
+    default:
+      break;
+  }
 
-    return { theme, toggleTheme, currentTheme };
-}
 
-export default useTheme; 
+  return { theme, currentTheme, toggleTheme };
+};
+
+export default useTheme;

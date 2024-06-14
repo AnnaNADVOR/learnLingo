@@ -12,7 +12,7 @@ const WelcomeInfo = () => {
         Elevate your language proficiency to new heights by connecting with
         highly qualified and experienced tutors.
       </WelcomeMessage>
-      <MainButton text="Get started" type="button" width="267px" />
+      <MainButton text="Get started" type="button" />
     </InfoContainer>
   );
 };

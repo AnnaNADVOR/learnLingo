@@ -14,7 +14,7 @@ const Layout = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowMobileMenu(window.innerWidth <= 768);
+      setShowMobileMenu(window.innerWidth < 768);
     };
 
     handleResize();

@@ -8,7 +8,7 @@ const Header = styled.div`
   justify-content: space-between;
 
   @media screen and (min-width: 768px) {
-    max-width: 720px;
+    max-width: 750px;
   }
 
   @media screen and (min-width: 1440px) {

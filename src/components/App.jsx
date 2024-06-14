@@ -11,7 +11,6 @@ export const App = () => {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyles />
-
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage selectedTheme={theme} />} />

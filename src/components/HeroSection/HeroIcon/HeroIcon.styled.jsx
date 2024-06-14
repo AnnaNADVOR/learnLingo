@@ -1,20 +1,21 @@
 import styled from '@emotion/styled';
 
-export const HeroContainer = styled.div`
-  position: relative;
+export const IconContainer = styled.div`
+  /* position: relative; */
   width: 100%;
   height: 350px;
   background-color: var(--accent-background);
-  border-radius: var(--border-radius);
+  border-radius: 20px;
 
-  @media screen and (min-width: 768px) {
-    width: 50%;
+  /* @media screen and (min-width: 768px) {
+    width: 40%;
     height: 500px;
-  }
+  } */
 
   @media screen and (min-width: 1440px) {
     width: 568px;
     height: 530px;
+    border-radius: var(--border-radius);
   }
 `;
 
@@ -26,13 +27,11 @@ export const GirlIcon = styled.img`
   width: 250px;
   height: 250px;
 
-  @media screen and (min-width: 768px) {
-    /* transform: translate(0); */
+  /* @media screen and (min-width: 768px) {
     top: 108px;
-    /* left: 90px; */
     width: 300px;
     height: 300px;
-  }
+  } */
 
   @media screen and (min-width: 1440px) {
     transform: translate(0);
@@ -48,16 +47,14 @@ export const MacIcon = styled.img`
   top: 230px;
   left: 50%;
   transform: translateX(-50%);
-  width: 250px;
+  width: 240px;
   height: 120px;
 
-  @media screen and (min-width: 768px) {
-    /* transform: translate(0);  */
+  /* @media screen and (min-width: 768px) {
     top: 349px;
-    /* left: 104px; */
     width: 330px;
     height: 150px;
-  }
+  } */
 
   @media screen and (min-width: 1440px) {
     transform: translate(0);
