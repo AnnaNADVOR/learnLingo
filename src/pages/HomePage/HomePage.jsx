@@ -18,7 +18,7 @@ const HomePage = ({ selectedTheme }) => {
       </svg> Theme
       </div> */}
       <HeroSection selectedTheme={selectedTheme} />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
     </div>
   );
 };

@@ -5,10 +5,11 @@ import './index.css';
 import { CustomThemeProvider } from './context/ThemeContext';
 import { BrowserRouter } from 'react-router-dom';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CustomThemeProvider>
-      <BrowserRouter basename="/learnLingo">
+      <BrowserRouter basename="/learnLingo">        
         <App />
       </BrowserRouter>
     </CustomThemeProvider>

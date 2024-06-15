@@ -10,11 +10,8 @@ import {
 
 const useTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  // const themes = [yellowTheme, blueTheme, redTheme, orangeTheme, greenTheme];
-  // setInterval(toggleTheme, 8000)
-  // const currentTheme = theme === 'yellowTheme' ? yellowTheme  : blueTheme ;
-  
-    let currentTheme;
+
+  let currentTheme;
   switch (theme) {
     case 'blue':
       currentTheme = blueTheme;
@@ -34,7 +31,6 @@ const useTheme = () => {
     default:
       break;
   }
-
 
   return { theme, currentTheme, toggleTheme };
 };

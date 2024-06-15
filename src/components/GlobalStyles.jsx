@@ -1,4 +1,5 @@
 import { Global, css, useTheme } from '@emotion/react';
+import 'modern-normalize/modern-normalize.css';
 
 const GlobalStyles = () => {
   const theme = useTheme();
@@ -25,7 +26,11 @@ const GlobalStyles = () => {
         body {
           background-color: var(--primary-white);
           color: var(--primary-black);
-          font-family: 'Roboto', sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+            'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+            'Helvetica Neue', sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
           font-weight: 400;
           font-size: 16px;
           line-height: 1.5;
