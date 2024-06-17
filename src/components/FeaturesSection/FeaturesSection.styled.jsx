@@ -6,31 +6,55 @@ export const Section = styled.section`
 `;
 
 export const FeaturesList = styled.ul`
-  border: 1.5px dashed var(--accent);
-  border-radius: var(--border-radius);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 450px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
   @media screen and (min-width: 1440px) {
     padding: 40px;
-
-    justify-content: space-evenly;
-    /* padding: 20px; */
+    flex-wrap: nowrap;
+    border: 1.5px dashed var(--accent);
+    border-radius: var(--border-radius);
   }
 `;
 
 export const FeatureItem = styled.li`
   display: inline-flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1.5px dashed var(--accent);
+  border-radius: var(--border-radius);
+  padding: 5px;
 
-  /* &:not(:last-child) {
-    margin-right: 10px;
-  } */
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 450px) {
+    flex-basis: calc((100% - 10px) / 2);
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 
   @media screen and (min-width: 1440px) {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    flex-direction: row;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    flex-basis: calc((100% - 300px) / 4);
+
     &:not(:last-child) {
       margin-right: 100px;
     }
@@ -48,6 +72,7 @@ export const FeatureNumber = styled.p`
 
   @media screen and (min-width: 1440px) {
     font-size: 28px;
+
     &:not(:last-child) {
       margin-right: 16px;
     }
@@ -55,7 +80,6 @@ export const FeatureNumber = styled.p`
 `;
 
 export const FeatureCategory = styled.p`
-  /* max-width: 94px; */
   font-size: 14px;
   line-height: 1.28571;
   color: var(--main-transparent-black);

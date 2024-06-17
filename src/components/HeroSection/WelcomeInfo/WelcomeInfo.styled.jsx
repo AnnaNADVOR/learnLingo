@@ -11,6 +11,12 @@ export const InfoContainer = styled.div`
     width: 100%;
   }
 
+  @media screen and (min-width: 450px) {
+    button {
+      width: 275px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     padding: 48px;
   }
@@ -22,7 +28,6 @@ export const InfoContainer = styled.div`
 
     button {
       margin-left: 0;
-      width: 275px;
     }
   }
 `;

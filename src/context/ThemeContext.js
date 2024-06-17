@@ -3,7 +3,6 @@ import { createContext, useEffect, useState } from 'react';
 const ThemeContext = createContext();
 
 const CustomThemeProvider = ({ children }) => {
-
   const [theme, setTheme] = useState(
     () => JSON.parse(localStorage.getItem('theme')) ?? 'yellow'
   );
@@ -12,10 +11,9 @@ const CustomThemeProvider = ({ children }) => {
     localStorage.setItem('theme', JSON.stringify(theme));
   }, [theme]);
 
-    const toggleTheme = () => {
-      
-      const themes = ['blue', 'green', 'red', 'orange', 'yellow'];
-      const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+  const toggleTheme = () => {
+    const themes = ['blue', 'green', 'red', 'orange', 'yellow'];
+    const randomTheme = themes[Math.floor(Math.random() * themes.length)];
 
     switch (randomTheme) {
       case 'blue':
@@ -33,7 +31,7 @@ const CustomThemeProvider = ({ children }) => {
       case 'yellow':
         setTheme('yellow');
         break;
-      default:
+      default: setTheme('yellow');
         break;
     }
   };
@@ -44,4 +42,5 @@ const CustomThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
+
 export { ThemeContext, CustomThemeProvider };

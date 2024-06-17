@@ -65,12 +65,6 @@ const GlobalStyles = () => {
           margin: 0;
           padding: 0;
         }
-/* 
-        *,
-        ::after,
-        ::before {
-          box-sizing: border-box;
-        } */
 
         button,
         input,

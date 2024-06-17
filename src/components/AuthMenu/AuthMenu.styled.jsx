@@ -23,7 +23,7 @@ export const LoginButton = styled.button`
   background-color: transparent;
   font-weight: 700;
   line-height: 1.25;
-  color: var(----primary-black);
+  color: var(--primary-black);
   transition: color var(--hover-transition);
 
   &:hover,

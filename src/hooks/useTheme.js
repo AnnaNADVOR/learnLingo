@@ -28,7 +28,7 @@ const useTheme = () => {
     case 'red':
       currentTheme = redTheme;
       break;
-    default:
+    default: currentTheme = yellowTheme;
       break;
   }
 

@@ -20,10 +20,10 @@ const Header = ({ showMenu, toggleNav, toggleAuth }) => {
       ) : (
         <>
           <NavBar />
-      
           <AuthMenu />
         </>
       )}
+      
     </HeaderContainer>
   );
 };

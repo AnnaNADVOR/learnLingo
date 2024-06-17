@@ -3,8 +3,6 @@ import { createPortal } from 'react-dom';
 import CloseButton from '../Buttons/CloseButton/CloseButton';
 import { Backdrop, ModalContainer } from './Modal.styled';
 
-
-
 const Modal = ({ closeModal, children }) => {
   useEffect(() => {
     const onEscClick = event => {
@@ -12,7 +10,9 @@ const Modal = ({ closeModal, children }) => {
         closeModal();
       }
     };
+
     window.addEventListener('keydown', onEscClick);
+
     return () => {
       window.removeEventListener('keydown', onEscClick);
     };
@@ -30,7 +30,6 @@ const Modal = ({ closeModal, children }) => {
         <CloseButton click={closeModal} />
         {children}
       </ModalContainer>
-		
     </Backdrop>,
     document.getElementById('modal-root')
   );
