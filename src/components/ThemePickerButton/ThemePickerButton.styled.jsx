@@ -11,10 +11,11 @@ export const PickerButton = styled.button`
   justify-content: center;
   border: none;
   background-color: transparent;
+  padding:0;
   cursor: pointer;
 
   &:hover > svg {
-    filter: drop-shadow(0 0 5px var(--secondary-transparent-black));
+    filter: drop-shadow(0 0 7px var(--secondary-transparent-black));
   }
 
   svg {
@@ -22,6 +23,7 @@ export const PickerButton = styled.button`
     height: 30px;
     fill: var(--primary-white);
     filter: drop-shadow(0 0 5px var(--main-transparent-black));
+    transition: filter var(--hover-transition);
   }
 
   @media screen and (min-width: 1440px) {

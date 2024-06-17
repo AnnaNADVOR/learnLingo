@@ -6,19 +6,18 @@ export const InfoContainer = styled.div`
   border-radius: var(--border-radius);
   text-align: center;
   width: 100%;
-  border: 1px solid black;
 
-     button {
-      width: 100%;
-    }
+  button {
+    width: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 48px;
   }
 
   @media screen and (min-width: 1440px) {
-    padding: 98px 108px 98px 64px;
-    width: 720px;
+    padding: 98px 105px 98px 64px;
+    width: 725px;
     text-align: start;
 
     button {
@@ -31,7 +30,7 @@ export const InfoContainer = styled.div`
 export const Title = styled.h1`
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.17;
+  line-height: 1.16;
   margin-bottom: 22px;
 
   span {

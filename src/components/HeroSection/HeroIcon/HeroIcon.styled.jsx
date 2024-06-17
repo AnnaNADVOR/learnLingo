@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const IconContainer = styled.div`
-
   height: 250px;
   width: 100%;
   background-color: var(--accent-background);
@@ -11,13 +10,14 @@ export const IconContainer = styled.div`
   background-position: bottom;
   border-radius: 20px;
   
-
   @media screen and (min-width: 1440px) {
     width: 568px;
     height: 530px;
     border-radius: var(--border-radius);
   }
 `;
+
+
 //  ${(({width})=> width ??'100%')};
 
 // export const IconContainer = styled.div`

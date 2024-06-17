@@ -37,6 +37,11 @@ const GlobalStyles = () => {
           letter-spacing: -0.02em;
         }
 
+        code {
+          font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+            monospace;
+        }
+
         a {
           text-decoration: none;
           color: currentColor;
@@ -60,12 +65,12 @@ const GlobalStyles = () => {
           margin: 0;
           padding: 0;
         }
-
+/* 
         *,
         ::after,
         ::before {
           box-sizing: border-box;
-        }
+        } */
 
         button,
         input,
@@ -73,7 +78,6 @@ const GlobalStyles = () => {
         select,
         textarea {
           font-family: inherit;
-
           margin: 0;
         }
       `}

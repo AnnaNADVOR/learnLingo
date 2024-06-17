@@ -8,7 +8,7 @@ const ThemePickerButton = () => {
   return (
     <PickerButton onClick={toggleTheme} type="button">
       <svg width="40px" height="40px">
-        <use href={`${sprite}#palette`}></use>
+        <use href={`${sprite}#paint`}></use>
       </svg>
     </PickerButton>
   );

@@ -7,7 +7,7 @@ const HeroSection = ({ selectedTheme }) => {
   return (
     <Section>
       <HeroContainer>
-        <div style={{position: "relative"}}>
+        <div style={{ position: 'relative' }}>
           <ThemePickerButton />
           <HeroIcon selectedTheme={selectedTheme} />
         </div>

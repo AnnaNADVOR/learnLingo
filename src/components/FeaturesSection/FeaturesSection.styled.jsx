@@ -8,34 +8,29 @@ export const Section = styled.section`
 export const FeaturesList = styled.ul`
   border: 1.5px dashed var(--accent);
   border-radius: var(--border-radius);
-        display: flex;
+  display: flex;
   align-items: center;
 
   @media screen and (min-width: 1440px) {
     padding: 40px;
 
-  
-  justify-content: space-evenly;
-  /* padding: 20px; */
-
+    justify-content: space-evenly;
+    /* padding: 20px; */
   }
 `;
 
 export const FeatureItem = styled.li`
-display: inline-flex;
- flex-direction: column; 
+  display: inline-flex;
+  flex-direction: column;
 
   /* &:not(:last-child) {
     margin-right: 10px;
   } */
 
   @media screen and (min-width: 1440px) {
-      
-    
-  
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     &:not(:last-child) {
       margin-right: 100px;
     }
