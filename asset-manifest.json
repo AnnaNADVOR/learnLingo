@@ -1,20 +1,31 @@
 {
   "files": {
-    "main.css": "/learnLingo/static/css/main.70b01caa.css",
-    "main.js": "/learnLingo/static/js/main.41613b96.js",
-    "static/media/girl-hero.png": "/learnLingo/static/media/girl-hero.9b8dc76fa337002d4fb5.png",
-    "static/media/iMac-hero-yellow.png": "/learnLingo/static/media/iMac-hero-yellow.fe98afd4627d5895f8be.png",
-    "static/media/iMac-hero-orange.png": "/learnLingo/static/media/iMac-hero-orange.74b9c4913c815f7b1209.png",
-    "static/media/iMac-hero-red.png": "/learnLingo/static/media/iMac-hero-red.749e942b72c8a19c91eb.png",
-    "static/media/iMac-hero-green.png": "/learnLingo/static/media/iMac-hero-green.c3a6b5f991150da6a8fa.png",
-    "static/media/iMac-hero-blue.png": "/learnLingo/static/media/iMac-hero-blue.ac12c099d11a2ae6b219.png",
-    "static/media/sprite.svg": "/learnLingo/static/media/sprite.c3919cc1054801e675267a96583ddfc8.svg",
+    "main.css": "/learnLingo/static/css/main.cc27238d.css",
+    "main.js": "/learnLingo/static/js/main.a36e868f.js",
+    "static/media/Roboto-Italic.ttf": "/learnLingo/static/media/Roboto-Italic.87f3afe16a8c3c370634.ttf",
+    "static/media/Roboto-Medium.ttf": "/learnLingo/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "/learnLingo/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "/learnLingo/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/Roboto-Italic.woff": "/learnLingo/static/media/Roboto-Italic.74221a4d0d094d6eb3b0.woff",
+    "static/media/Roboto-Medium.woff": "/learnLingo/static/media/Roboto-Medium.44f0515c8c7c844e3e2d.woff",
+    "static/media/Roboto-Bold.woff": "/learnLingo/static/media/Roboto-Bold.2ddbea4806c184d186fa.woff",
+    "static/media/Roboto-Regular.woff": "/learnLingo/static/media/Roboto-Regular.d535d388dc916299d083.woff",
+    "static/media/Roboto-Italic.woff2": "/learnLingo/static/media/Roboto-Italic.4150dfa9c521d1571eb6.woff2",
+    "static/media/Roboto-Medium.woff2": "/learnLingo/static/media/Roboto-Medium.70ace3870f471997ceb7.woff2",
+    "static/media/Roboto-Bold.woff2": "/learnLingo/static/media/Roboto-Bold.002079d85a6f27587d17.woff2",
+    "static/media/Roboto-Regular.woff2": "/learnLingo/static/media/Roboto-Regular.9429985be4f46ec8fcfc.woff2",
+    "static/media/logo-yellow.png": "/learnLingo/static/media/logo-yellow.840485c970eea14b49d9.png",
+    "static/media/logo-red.png": "/learnLingo/static/media/logo-red.f38e19913614fb30390c.png",
+    "static/media/logo-green.png": "/learnLingo/static/media/logo-green.8622946ed2094f253ad6.png",
+    "static/media/logo-blue.png": "/learnLingo/static/media/logo-blue.4946e501b0fde86e7b36.png",
+    "static/media/logo-orange.png": "/learnLingo/static/media/logo-orange.8c5668967eebcd5c7998.png",
+    "static/media/sprite.svg": "/learnLingo/static/media/sprite.86bf6987effcdce98445aa32ca49ae8a.svg",
     "index.html": "/learnLingo/index.html",
-    "main.70b01caa.css.map": "/learnLingo/static/css/main.70b01caa.css.map",
-    "main.41613b96.js.map": "/learnLingo/static/js/main.41613b96.js.map"
+    "main.cc27238d.css.map": "/learnLingo/static/css/main.cc27238d.css.map",
+    "main.a36e868f.js.map": "/learnLingo/static/js/main.a36e868f.js.map"
   },
   "entrypoints": [
-    "static/css/main.70b01caa.css",
-    "static/js/main.41613b96.js"
+    "static/css/main.cc27238d.css",
+    "static/js/main.a36e868f.js"
   ]
 }
