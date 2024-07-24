@@ -13,6 +13,10 @@ export const InfoMessage = styled.p`
   margin-bottom: 40px;
 `;
 
+export const ErrorMessage = styled.p`
+  color: var(--error-message);
+`
+
 export const FormInput = styled.input`
   width: 100%;
   padding: 16px 18px;

@@ -12,6 +12,7 @@ const useTheme = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   let currentTheme;
+  
   switch (theme) {
     case 'blue':
       currentTheme = blueTheme;

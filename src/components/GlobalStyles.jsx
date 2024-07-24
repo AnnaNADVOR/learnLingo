@@ -21,6 +21,7 @@ const GlobalStyles = () => {
           --button-shadow: ${theme.buttonShadow};
           --border-radius: ${theme.borderRadius};
           --secondary-background: ${theme.secondaryBackground};
+          --error-message: ${theme.errorMessage};
         }
 
         body {

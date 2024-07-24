@@ -3,11 +3,13 @@ import { createContext, useEffect, useState } from 'react';
 const ThemeContext = createContext();
 
 const CustomThemeProvider = ({ children }) => {
+
   const [theme, setTheme] = useState(
     () => JSON.parse(localStorage.getItem('theme')) ?? 'yellow'
   );
 
   useEffect(() => {
+    
     localStorage.setItem('theme', JSON.stringify(theme));
   }, [theme]);
 

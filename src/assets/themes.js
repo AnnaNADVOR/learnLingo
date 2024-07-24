@@ -4,6 +4,7 @@ const commonTheme = {
   secondaryBackground: '#f8f8f8',
   mainTransparentBlack: 'rgba(18, 20, 23, 0.7)',
   secondaryTransparentBlack: 'rgba(18, 20, 23, 0.8)',
+  errorMessage: '#ff0000',
   primaryWhite: '#fff',
   overlayBack: 'rgba(17, 18, 19, 0.4)',
   inputFormBorder: '1px solid rgba(18, 20, 23, 0.1)',
