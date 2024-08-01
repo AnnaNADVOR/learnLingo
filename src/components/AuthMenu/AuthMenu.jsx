@@ -40,12 +40,14 @@ const AuthNav = () => {
         <Modal closeModal={toggleModal}>
           {showForm === 'login' && (
             <AuthForm
+              closeModal={toggleModal}
               title="Log In"
               message="Welcome back! Please enter your credentials to access your account and continue your search for an teacher."
             />
           )}
           {showForm === 'register' && (
             <AuthForm
+              closeModal={toggleModal}
               title="Registration"
               message="Thank you for your interest in our platform! In order to register, we need some information. Please provide us with the following information"
             />
