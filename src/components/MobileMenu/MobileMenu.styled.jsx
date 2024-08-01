@@ -32,6 +32,7 @@ const Icon = styled.svg`
   width: 20px;
   height: 20px;
 `;
+
 export const MenuIcon = styled.svg`
   width: 40px;
   height: 40px;

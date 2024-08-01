@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
-import { getDatabase} from 'firebase/database';
-import { getAuth } from "firebase/auth";
+import { getDatabase, ref } from 'firebase/database';
+import { getAuth } from 'firebase/auth';
 // import { getFirestore } from "firebase/firestore";
 // import { getStorage } from "firebase/storage";
 
@@ -14,17 +14,19 @@ const APP_ID = process.env.REACT_APP_APP_ID;
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: API_KEY,
-  authDomain: "learnlingo-98e21.firebaseapp.com",
-  databaseURL: "https://learnlingo-98e21-default-rtdb.firebaseio.com",
-  projectId: "learnlingo-98e21",
-  storageBucket: "learnlingo-98e21.appspot.com",
+  authDomain: 'learnlingo-98e21.firebaseapp.com',
+  databaseURL: 'https://learnlingo-98e21-default-rtdb.firebaseio.com',
+  projectId: 'learnlingo-98e21',
+  storageBucket: 'learnlingo-98e21.appspot.com',
   messagingSenderId: SENDER_ID,
-  appId: APP_ID
+  appId: APP_ID,
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const database = getDatabase(); 
+
 export const auth = getAuth(app);
+export const database = getDatabase();
+export const dbReferance = ref(database)
 // export const db = getFirestore(app);
 // export const storage = getStorage(app);

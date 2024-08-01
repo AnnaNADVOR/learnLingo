@@ -22,6 +22,7 @@ const GlobalStyles = () => {
           --border-radius: ${theme.borderRadius};
           --secondary-background: ${theme.secondaryBackground};
           --error-message: ${theme.errorMessage};
+          --onLine-button: ${theme.onLineButton};
         }
 
         body {

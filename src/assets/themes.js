@@ -11,6 +11,7 @@ const commonTheme = {
   buttonShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
   hoverTransition: '250ms cubic-bezier(0.4, 0, 0.2, 1)',
   borderRadius: '30px',
+  onLineButton: '#38cd3e',
 };
 
 export const blueTheme = {

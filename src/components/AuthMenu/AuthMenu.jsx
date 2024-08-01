@@ -12,6 +12,7 @@ import AuthForm from 'components/AuthForm/AuthForm';
 const AuthNav = () => {
   const [showModal, setShowModal] = useState(false);
   const [showForm, setShowForm] = useState(null);
+  
   const toggleModal = () => setShowModal(prevShowModal => !prevShowModal);
 
   const toggleForm = event => {
