@@ -1,9 +1,12 @@
 import { Suspense, useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
+
 import Modal from 'components/Modal/Modal';
 import MobileNavBar from 'components/MobileMenu/MobileNavBar/MobileNavBar';
 import MobileAuth from 'components/MobileMenu/MobileAuth/MobileAuth';
-import Header from '../Header/Header';
+import HeaderContainer from '../Header/Header';
+import { Header } from './Layout.styled';
 
 const Layout = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -11,6 +14,8 @@ const Layout = () => {
   const [showMobileAuth, setShowMobileAuth] = useState(false);
   const toggleMobileNav = () => setShowMobileNav(!showMobileNav);
   const toggleMobileAuth = () => setShowMobileAuth(!showMobileAuth);
+
+  // const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,13 +32,13 @@ const Layout = () => {
 
   return (
     <>
-      <header>
-        <Header
+      <Header>
+        <HeaderContainer
           showMenu={showMobileMenu}
           toggleAuth={toggleMobileAuth}
           toggleNav={toggleMobileNav}
         />
-      </header>
+      </Header>
       <main>
         <Suspense>
           <Outlet />

@@ -6,7 +6,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  
   @media screen and (min-width: 768px) {
     max-width: 750px;
   }

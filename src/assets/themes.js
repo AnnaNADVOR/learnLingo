@@ -8,10 +8,12 @@ const commonTheme = {
   primaryWhite: '#fff',
   overlayBack: 'rgba(17, 18, 19, 0.4)',
   inputFormBorder: '1px solid rgba(18, 20, 23, 0.1)',
+  secondaryBorder: '1px solid rgba(18, 20, 23, 0.2)',
   buttonShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
   hoverTransition: '250ms cubic-bezier(0.4, 0, 0.2, 1)',
   borderRadius: '30px',
-  onLineButton: '#38cd3e',
+  accentGreen: '#38cd3e',
+  secondaryBodyBackground: '#f8f8f8',
 };
 
 export const blueTheme = {

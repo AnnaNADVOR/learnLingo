@@ -3,7 +3,7 @@ import 'modern-normalize/modern-normalize.css';
 
 const GlobalStyles = () => {
   const theme = useTheme();
-
+ 
   return (
     <Global
       styles={css`
@@ -22,7 +22,9 @@ const GlobalStyles = () => {
           --border-radius: ${theme.borderRadius};
           --secondary-background: ${theme.secondaryBackground};
           --error-message: ${theme.errorMessage};
-          --onLine-button: ${theme.onLineButton};
+          --accent-green: ${theme.accentGreen};
+          --secondary-body-background: ${theme.secondaryBodyBackground};
+          --secondary-border: ${theme.secondaryBorder};
         }
 
         body {
