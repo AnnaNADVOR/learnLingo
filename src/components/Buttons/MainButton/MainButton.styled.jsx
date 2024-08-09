@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Button = styled.button`
   display: block;
   width: ${(({width})=> width ?? '100%')};
-  margin-left: auto;
+  margin-left: ${(({marginLeft})=> marginLeft ?? 'auto')};;
   margin-right: auto;
   padding: 16px;
   border: none;

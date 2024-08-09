@@ -1,7 +1,7 @@
 import { Button } from './MainButton.styled';
 
-const MainButton = ({ text, type, width }) => {
-  return <Button type={type} width={width}>{text}</Button>
+const MainButton = ({ onClick, type, text,  width, marginLeft }) => {
+  return <Button type={type} onClick={onClick} width={width} marginLeft={marginLeft}>{text}</Button>
 };
 
 export default MainButton;

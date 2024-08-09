@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import HomePage from 'pages/HomePage/HomePage';
-import TeachersPage from 'pages/HomePage/TeachersPage/TeachersPage';
+import TeachersPage from 'pages/TeachersPage/TeachersPage';
 import { ThemeProvider } from '@emotion/react';
 import useTheme from '../hooks/useTheme';
 import GlobalStyles from './GlobalStyles';

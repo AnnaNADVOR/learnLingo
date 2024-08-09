@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+
 export const TeacherCard = styled.div`
   display: flex;
 `;
@@ -9,7 +10,7 @@ export const Avatar = styled.div`
   width: 120px;
   height: 120px;
   border: 3px solid var(--accent-background);
-  border-radius: 100px;  
+  border-radius: 100px;
 `;
 
 export const Photo = styled.div`
@@ -54,8 +55,7 @@ export const RatingIcon = styled.svg`
 export const TeachersInfoPanel = styled.div`
   /* display: flex; 
 flex-direction:column; */
-width: calc(100% - 168px);
-
+  width: calc(100% - 168px);
 `;
 
 export const CaracteristicsPanel = styled.div`
@@ -107,16 +107,19 @@ export const FavoriteButton = styled.button`
 
 export const TeacherName = styled.p`
   font-size: 24px;
-  margin-bottom: 32px;
 `;
 
 export const SecondaryText = styled.span`
   color: var(--secondary-black);
 `;
 
-export const MainInfo = styled.p`
-  &:not(:last-of-type) {
-    margin-bottom: 8px;
+export const MainInfoList = styled.ul`
+  margin-top: 32px;
+`;
+
+export const MainInfo = styled.li`
+  &:not(:first-of-type) {
+    margin-top: 8px;
   }
 `;
 
@@ -132,23 +135,73 @@ export const ReadMoreButton = styled.button`
   text-decoration-skip-ink: none;
   font-weight: 500;
   background-color: transparent;
-  padding:0;
+  padding: 0;
   margin-top: 16px;
-  margin-bottom: 32px;
 `;
 
 export const LevelsList = styled.ul`
-    display: flex;     
-    gap: 8px;    
-`
+  display: flex;
+  gap: 8px;
+  margin: 32px 0;
+`;
 
 export const LevelItem = styled.li`
-    display: flex; 
-    align-items: center;
-    border: var(--secondary-border);
-    border-radius: 35px;
-    padding: 8px 12px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14286;   
-`
+  display: flex;
+  align-items: center;
+  border: var(--secondary-border);
+  border-radius: 35px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+`;
+
+export const ExperienceInfo = styled.p`
+  font-weight: 400;
+  margin-top: 16px;
+`;
+
+export const ReviewsList = styled.ul`
+  margin-top: 32px;
+`;
+
+export const ReviewItem = styled.li`
+  &:not(:first-of-type) {
+    margin-top: 32px;
+  }
+`;
+
+export const ReviewerIcon = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-background);
+  border-radius: 100%;
+`;
+
+export const ReviewerRating = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+`;
+
+export const ReviewData = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+`;
+
+export const ReviewerInfo = styled.div`
+  display: inline-flex;
+  gap: 12px;
+  margin-bottom: 16px;
+`;
+
