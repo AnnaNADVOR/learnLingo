@@ -27,12 +27,11 @@ const TeachersPage = () => {
     startAt(id)
   );
 
-  async function fetchTeachers() {
+  const fetchTeachers = async () => {
     try {
       const result = await get(teachersRef);
       if (result.exists()) {
         const data = Object.values(result.val());
-        // const filteredData = data.filter(element => Object.keys(element).length)
         setTeachersList(prevData => [...prevData, ...data]);
         setId(String(data[data.length - 1].teacher_id));
         setDataLength(data.length);
@@ -42,10 +41,33 @@ const TeachersPage = () => {
     } catch (error) {
       console.log('error', error);
     }
-  }
+  };
 
   useEffect(() => {
-    fetchTeachers();
+    const teachersFirstRef = query(
+      ref(database, 'teachers'),
+      limitToFirst(PAGE_SIZE),
+      orderByKey('teacher_id')
+    );
+
+    const firstFetchTeachers = async () => {
+      try {
+        const result = await get(teachersFirstRef);
+        if (result.exists()) {
+          const data = Object.values(result.val());
+          // const filteredData = data.filter(element => Object.keys(element).length)
+          setTeachersList(prevData => [...prevData, ...data]);
+          setId(String(data[data.length - 1].teacher_id));
+          setDataLength(data.length);
+        } else {
+          setDataLength(0);
+        }
+      } catch (error) {
+        console.log('error', error);
+      }
+    };
+
+    firstFetchTeachers();
   }, []);
 
   const handleLoadMoreClick = () => {
