@@ -30,7 +30,6 @@ import {
   ReviewerRating,
 } from './TeacherCardItem.styled';
 
-
 const TeacherCardItem = ({ teacherData }) => {
   const [showMore, setShowMore] = useState(false);
 
