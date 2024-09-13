@@ -15,8 +15,6 @@ const Layout = () => {
   const toggleMobileNav = () => setShowMobileNav(!showMobileNav);
   const toggleMobileAuth = () => setShowMobileAuth(!showMobileAuth);
 
-  // const location = useLocation();
-
   useEffect(() => {
     const handleResize = () => {
       setShowMobileMenu(window.innerWidth < 768);

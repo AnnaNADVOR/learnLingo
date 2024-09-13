@@ -4,7 +4,6 @@ import MainButton from 'components/Buttons/MainButton/MainButton';
 import {
   Avatar,
   Photo,
-  OnlineReport,
   BookIcon,
   RatingIcon,
   TeachersInfoPanel,
@@ -29,20 +28,28 @@ import {
   ReviewerInfo,
   ReviewerRating,
 } from './TeacherCardItem.styled';
+import Modal from 'components/Modal/Modal';
+import BookLessonForm from 'components/BookLessonForm/BookLessonForm';
 
 const TeacherCardItem = ({ teacherData }) => {
   const [showMore, setShowMore] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const toggleShowMore = () => setShowMore(!showMore);
+  const toggleModal = () => setShowModal(prevShowModal => !prevShowModal);
 
-  const handleClickReadMore = () => toggleShowMore();
+  const handleReadMoreClick = () => toggleShowMore();
+
+  const handleBookButtonClick = (event) => {
+    toggleModal()
+    console.log(event.target)
+  }
+
 
   return (
     <>
       <Avatar>
-        <Photo avatar={teacherData.avatar_url}>
-          <OnlineReport></OnlineReport>
-        </Photo>
+        <Photo avatar={teacherData.avatar_url}/>  
       </Avatar>
 
       <TeachersInfoPanel>
@@ -93,7 +100,7 @@ const TeacherCardItem = ({ teacherData }) => {
               {teacherData.conditions.join(' ')}
             </MainInfo>
           </MainInfoList>
-          <ReadMoreButton onClick={handleClickReadMore}>
+          <ReadMoreButton onClick={handleReadMoreClick}>
             {showMore ? 'Hide' : 'Read more'}
           </ReadMoreButton>
           {showMore && (
@@ -139,8 +146,13 @@ const TeacherCardItem = ({ teacherData }) => {
             text="Book trial lesson"
             width="232px"
             marginLeft={0}
+            onClick={handleBookButtonClick}
           />
         )}
+
+        {showModal && <Modal closeModal={toggleModal}>
+          <BookLessonForm teacherData={teacherData} />
+        </Modal>}
       </TeachersInfoPanel>
     </>
   );

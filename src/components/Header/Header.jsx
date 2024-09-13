@@ -9,7 +9,6 @@ import { HeaderContainer, FlagIcon, LogoLink } from './Header.styled';
 
 const Header = ({ showMenu, toggleNav, toggleAuth }) => {
   
-
   return (
     <HeaderContainer>
       <LogoLink to="/">

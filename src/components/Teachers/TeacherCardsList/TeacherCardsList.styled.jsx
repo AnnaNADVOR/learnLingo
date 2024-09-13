@@ -11,6 +11,7 @@ export const TeacherCard = styled.li`
   padding: 24px;
   font-weight: 500;
   background-color: var(--primary-white);
+  margin-bottom: 64px;
   
   &:not(:last-child) {
     margin-bottom: 32px;

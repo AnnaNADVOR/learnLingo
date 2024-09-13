@@ -16,7 +16,7 @@ import MainButton from 'components/Buttons/MainButton/MainButton';
 
 const TeachersPage = () => {
   const [teachersList, setTeachersList] = useState([]);
-  const [id, setId] = useState('0');
+  const [teacherId, setTeacherId] = useState('0');
   const [dataLength, setDataLength] = useState(0);
   const PAGE_SIZE = 4;
 
@@ -24,7 +24,7 @@ const TeachersPage = () => {
     ref(database, 'teachers'),
     limitToFirst(PAGE_SIZE),
     orderByKey('teacher_id'),
-    startAt(id)
+    startAt(teacherId)
   );
 
   const fetchTeachers = async () => {
@@ -33,7 +33,7 @@ const TeachersPage = () => {
       if (result.exists()) {
         const data = Object.values(result.val());
         setTeachersList(prevData => [...prevData, ...data]);
-        setId(String(data[data.length - 1].teacher_id));
+        setTeacherId(String(data[data.length - 1].teacher_id));
         setDataLength(data.length);
       } else {
         setDataLength(0);
@@ -57,7 +57,7 @@ const TeachersPage = () => {
           const data = Object.values(result.val());
           // const filteredData = data.filter(element => Object.keys(element).length)
           setTeachersList(prevData => [...prevData, ...data]);
-          setId(String(data[data.length - 1].teacher_id));
+          setTeacherId(String(data[data.length - 1].teacher_id));
           setDataLength(data.length);
         } else {
           setDataLength(0);

@@ -24,18 +24,19 @@ export const Photo = styled.div`
   background-image: url(${({ avatar }) => avatar});
   background-repeat: no-repeat;
   background-size: cover;
-`;
 
-export const OnlineReport = styled.span`
-  position: absolute;
-  display: block;
-  right: 10px;
-  top: 8px;
-  border-radius: 100px;
-  border: 2px solid var(--primary-white);
-  width: 12px;
-  height: 12px;
-  background-color: var(--accent-green);
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 8px;
+    border-radius: 100px;
+    border: 2px solid var(--primary-white);
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-green);
+  }
 `;
 
 export const BookIcon = styled.svg`
@@ -89,10 +90,9 @@ export const CharacteristicsItem = styled.li`
   font-weight: 500;
 
   @media screen and (min-width: 780px) {
-    border-right: var(--secondary-border);
-
     &:not(:last-child) {
-      padding-right: 16px;    
+      padding-right: 16px;
+      border-right: var(--secondary-border);    
     }    
   }
 `;
