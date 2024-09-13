@@ -53,18 +53,34 @@ export const RatingIcon = styled.svg`
 `;
 
 export const TeachersInfoPanel = styled.div`
-  /* display: flex; 
-flex-direction:column; */
-  width: calc(100% - 168px);
+
+ @media screen and (min-width: 780px) {
+ width: calc(100% - 168px);
+  }
+ 
 `;
 
 export const CaracteristicsPanel = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 780px) { 
+    justify-content: flex-end;
+  }
 `;
+
 export const CharacteristicsList = styled.ul`
   display: flex;
-  margin-right: 64px;
+  flex-direction: column;
+  gap: 8px;
+  
+  @media screen and (min-width: 780px) { 
+    gap: 16px;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    margin-right: 64px;
+   }
 `;
 
 export const CharacteristicsItem = styled.li`
@@ -72,13 +88,12 @@ export const CharacteristicsItem = styled.li`
   align-items: center;
   font-weight: 500;
 
-  &:not(:first-of-type) {
-    padding-left: 16px;
-  }
-
-  &:not(:last-child) {
-    padding-right: 16px;
+  @media screen and (min-width: 780px) {
     border-right: var(--secondary-border);
+
+    &:not(:last-child) {
+      padding-right: 16px;    
+    }    
   }
 `;
 
@@ -141,6 +156,7 @@ export const ReadMoreButton = styled.button`
 
 export const LevelsList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 32px 0;
 `;

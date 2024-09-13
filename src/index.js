@@ -6,11 +6,11 @@ import { CustomThemeProvider } from './context/ThemeContext';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <CustomThemeProvider>
       <BrowserRouter basename="/learnLingo">
         <App />
       </BrowserRouter>
     </CustomThemeProvider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );

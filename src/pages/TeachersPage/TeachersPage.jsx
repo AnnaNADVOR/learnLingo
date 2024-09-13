@@ -75,7 +75,7 @@ const TeachersPage = () => {
   };
 
   function showLoadMoreButton() {
-    console.log('datalength', dataLength);
+    // console.log('datalength', dataLength);
     if (dataLength === PAGE_SIZE) {
       return true;
     }

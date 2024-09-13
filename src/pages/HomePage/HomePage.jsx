@@ -8,7 +8,6 @@ const HomePage = ({ selectedTheme }) => {
       <HeroSection selectedTheme={selectedTheme} />
       <FeaturesSection />
     </>
-    // </div>
   );
 };
 
